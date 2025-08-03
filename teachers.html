@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuitions by Ammar - Our Teachers</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to integrate Tailwind with existing theme */
+        .text-cyan-600 { color: #19A7CE; }
+        .focus\:ring-cyan-400:focus { --tw-ring-color: rgba(25, 167, 206, 0.4); }
+        .bg-cyan-600 { background-color: #19A7CE; }
+        .hover\:bg-cyan-700:hover { background-color: #146C94; }
+        .text-theme-primary { color: #19A7CE; }
+        .text-theme-dark { color: #333; }
+        .text-theme-medium { color: #555; }
+        .text-theme-light { color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tuitions by Ammar</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="become_a_tutor.html">Become a Tutor</a></li>
+                <li><a href="find_a_tutor.html">Find a Tutor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-small">
+            <h1>Our Expert Tutors</h1>
+            <div class="hero-bg-triangle"></div>
+        </section>
+        
+        <!-- Subject Categories Section - if applicable for this page, or remove if not needed -->
+        <section class="subject-categories-section p-6">
+            <h2>Explore Subjects</h2>
+            <div class="subject-categories-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="A-level.html" class="subject-category-box bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-2">A-Level</h3>
+                    <p class="text-slate-600 text-sm">Advanced Level courses for university preparation.</p>
+                </a>
+                <a href="O-level.html" class="subject-category-box bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-2">O-Level</h3>
+                    <p class="text-slate-600 text-sm">Ordinary Level courses for secondary education.</p>
+                </a>
+                <a href="igcse.html" class="subject-category-box bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-2">IGCSE</h3>
+                    <p class="text-slate-600 text-sm">International General Certificate of Secondary Education.</p>
+                </a>
+                <a href="Aptitude-test.html" class="subject-category-box bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-2">Aptitude Tests</h3>
+                    <p class="text-slate-600 text-sm">Preparation for various aptitude and entrance exams.</p>
+                </a>
+                <a href="Ed-excel.html" class="subject-category-box bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-50">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-2">Edexcel</h3>
+                    <p class="text-slate-600 text-sm">Preparation for Edexcel examinations and qualifications.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="teachers-by-subject p-6">
+            <h2>Meet Our Teachers</h2>
+            <div class="teachers-grid-detailed grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="teacher-widget bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <img src="placeholder_teacher1.jpg" alt="Teacher Name" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-600">
+                    <h4 class="text-xl font-bold text-cyan-600 mb-2">Ms. Sarah Khan</h4>
+                    <p class="text-slate-700 text-sm mb-4"><strong>Specializes in:</strong> IGCSE & A-Level Mathematics</p>
+                    <p class="text-slate-600 text-sm">Ms. Khan has over 8 years of experience in teaching advanced mathematics, with a focus on conceptual clarity and problem-solving techniques.</p>
+                </div>
+                <div class="teacher-widget bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <img src="placeholder_teacher2.jpg" alt="Teacher Name" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-600">
+                    <h4 class="text-xl font-bold text-cyan-600 mb-2">Mr. Ali Raza</h4>
+                    <p class="text-slate-700 text-sm mb-4"><strong>Specializes in:</strong> O-Level & A-Level Physics</p>
+                    <p class="text-slate-600 text-sm">Mr. Raza is a passionate physics educator known for making complex topics understandable and engaging. He has a strong track record of student success.</p>
+                </div>
+                <div class="teacher-widget bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <img src="placeholder_teacher3.jpg" alt="Teacher Name" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-600">
+                    <h4 class="text-xl font-bold text-cyan-600 mb-2">Dr. Aisha Nadeem</h4>
+                    <p class="text-slate-700 text-sm mb-4"><strong>Specializes in:</strong> Biology & Chemistry (IGCSE & O-Level)</p>
+                    <p class="text-slate-600 text-sm">Dr. Nadeem brings a wealth of scientific knowledge and a patient teaching approach, helping students excel in challenging science subjects.</p>
+                </div>
+                <!-- Add more teacher widgets as needed -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tuitions by Ammar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

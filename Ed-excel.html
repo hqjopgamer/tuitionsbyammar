@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuitions by Ammar - Ed-excel</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to integrate Tailwind with existing theme */
+        .text-cyan-600 { color: #19A7CE; }
+        .focus\:ring-cyan-400:focus { --tw-ring-color: rgba(25, 167, 206, 0.4); }
+        .bg-cyan-600 { background-color: #19A7CE; }
+        .hover\:bg-cyan-700:hover { background-color: #146C94; }
+        .text-theme-primary { color: #19A7CE; }
+        .text-theme-dark { color: #333; }
+        .text-theme-medium { color: #555; }
+        .text-theme-light { color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tuitions by Ammar</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="become_a_tutor.html">Become a Tutor</a></li>
+                <li><a href="find_a_tutor.html">Find a Tutor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-small">
+            <h1>Ed-excel Preparation</h1>
+            <div class="hero-bg-triangle"></div>
+        </section>
+
+        <section class="teachers-by-subject p-6">
+            <div class="teachers-grid-detailed grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="teacher-widget bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <img src="placeholder_teacher2.jpg" alt="Mr. Ali Raza" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-600">
+                    <h4 class="text-xl font-bold text-cyan-600 mb-2">Mr. Ali Raza</h4>
+                    <p class="text-slate-700 text-sm mb-4"><strong>Specialization:</strong> Edexcel Chemistry</p>
+                    <p class="text-slate-600 text-sm">Mr. Raza provides expert tuition for Edexcel Chemistry, ensuring students are well-prepared for their exams.</p>
+                    <a href="find_a_tutor.html" class="btn call-to-action small shadow-md hover:shadow-lg transition-all duration-300">Join Mr. Ali's Class</a>
+                </div>
+                <div class="teacher-widget bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <img src="placeholder_teacher5.jpg" alt="Dr. Walter White" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-cyan-600">
+                    <h4 class="text-xl font-bold text-cyan-600 mb-2">Dr. Walter White</h4>
+                    <p class="text-slate-700 text-sm mb-4"><strong>Specialization:</strong> Edexcel Physics</p>
+                    <p class="text-slate-600 text-sm">Dr. White offers comprehensive tuition for Edexcel Physics, helping students master concepts and achieve high scores.</p>
+                    <a href="find_a_tutor.html" class="btn call-to-action small shadow-md hover:shadow-lg transition-all duration-300">Join Dr. Walter's Class</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tuitions by Ammar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

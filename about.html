@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuitions by Ammar - About Us</title>
+    <link rel="stylesheet" href="style.css?v=1.4">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to integrate Tailwind with existing theme */
+        .text-cyan-600 { color: #19A7CE; }
+        .focus\:ring-cyan-400:focus { --tw-ring-color: rgba(25, 167, 206, 0.4); }
+        .bg-cyan-600 { background-color: #19A7CE; }
+        .hover\:bg-cyan-700:hover { background-color: #146C94; }
+        .text-theme-primary { color: #19A7CE; }
+        .text-theme-dark { color: #333; }
+        .text-theme-medium { color: #555; }
+        .text-theme-light { color: #666; }
+
+        /* Additional custom styles for new sections to match existing theme */
+
+        .feature-card, .policy-card, .faq-item, .contact-card, .legal-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover, .policy-card:hover, .faq-item:hover, .contact-card:hover, .legal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+            /* Placeholder styles for icons */
+            background-color: #19A7CE;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .section-padding {
+            padding: 4rem 2rem;
+        }
+        .grid-3-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .image-placeholder {
+            background-color: #eee;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #19A7CE;
+            margin-bottom: 0.5rem;
+        }
+        .faq-answer {
+            color: #555;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info svg {
+            color: #19A7CE;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tuitions by Ammar</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="become_a_tutor.html">Become a Tutor</a></li>
+                <li><a href="find_a_tutor.html">Find a Tutor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-small">
+            <h1>About Tuitions by Ammar</h1>
+            <div class="hero-bg-triangle"></div>
+        </section>
+
+        <!-- Why Tuitions By Ammar? (Our Difference) Section -->
+        <section class="section-padding bg-gray-100">
+            <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">Why Tuitions By Ammar? (Our Difference)</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+                    <div class="feature-card">
+                        <div class="icon">✓</div> <!-- Placeholder for Verified Tutors Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Verified Tutors</h3>
+                        <p class="text-theme-medium">Every tutor’s CNIC and transcripts are checked.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">$</div> <!-- Placeholder for Escrow Payments Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Escrow Payments</h3>
+                        <p class="text-theme-medium">Your fee is held securely by TBA, released to tutors after classes begin, building trust on both sides.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🌐</div> <!-- Placeholder for Global Reach Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Global Reach</h3>
+                        <p class="text-theme-medium">Access tutors in Pakistan and internationally for every mainstream exam.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">⚡</div> <!-- Placeholder for Fast Matching Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Fast Matching</h3>
+                        <p class="text-theme-medium">Most clients are matched with a tutor within 24–48 hours.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💬</div> <!-- Placeholder for Personalized Support Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Personalized Support</h3>
+                        <p class="text-theme-medium">Dedicated WhatsApp support for every query, every step.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🚻</div> <!-- Placeholder for Gender Options Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Gender Options</h3>
+                        <p class="text-theme-medium">Both male and female tutors available for all subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section class="section-padding">
+            <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">Success Stories</h2>
+                <div class="grid-3-col">
+                    <div class="testimonial-card-small shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="image-placeholder">Testimonial Image</div>
+                        <p class="testimonial-text-small text-theme-medium">"(You will fill in real stories here—leave blank for now)"</p>
+                        <p class="student-name-small text-theme-dark font-semibold">- Student Placeholder</p>
+                    </div>
+                    <div class="testimonial-card-small shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="image-placeholder">WhatsApp Chat Screenshot</div>
+                        <p class="testimonial-text-small text-theme-medium">"(You will fill in real stories here—leave blank for now)"</p>
+                        <p class="student-name-small text-theme-dark font-semibold">- Tutor Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Policies Section -->
+        <section class="section-padding bg-gray-100">
+            <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">Our Policies</h2>
+                <div class="grid-3-col">
+                    <div class="policy-card">
+                        <div class="icon">🔒</div> <!-- Placeholder for Escrow Money Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Advance Payments</h3>
+                        <p class="text-theme-medium">Clients pay in advance; TBA holds the fee in escrow for the first week, then pays tutors. This ensures accountability and builds trust for both parents and tutors.</p>
+                    </div>
+                    <div class="policy-card">
+                        <div class="icon">🛡️</div> <!-- Placeholder for Verification Shield Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Verification</h3>
+                        <p class="text-theme-medium">All tutors must verify their CNIC and academic transcripts. Subjective judgment is applied during application chat.</p>
+                    </div>
+                    <div class="policy-card">
+                        <div class="icon">🤝</div> <!-- Placeholder for Demo Class Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Demo Class</h3>
+                        <p class="text-theme-medium">A complimentary first session is always provided, letting parents and students judge tutor compatibility before commitment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section - Preserving existing JS animation -->
+        <section class="achievements section-padding">
+            <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">Achievements</h2>
+            <div class="achievements-description text-center text-theme-medium mb-8">
+                <p>At Tuitions By Ammar, we have fulfilled the needs of over 900 clients worldwide, receiving exceptional feedback.</p>
+                <p>Since 2022, our tutor network has generated globally over <span class="text-cyan-600 font-bold">,000</span> in tuition fees</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item shadow-sm hover:shadow-md transition-all duration-300">
+                    <span class="achievement-number" data-target="900">0</span>+
+                    <p>Clients Worldwide</p>
+                    <div class="image-placeholder icon">🏆</div> <!-- Placeholder for Achievement Award Icon -->
+                </div>
+                <div class="achievement-item shadow-sm hover:shadow-md transition-all duration-300">
+                    <span class="achievement-number" data-target="2022">0</span>
+                    <p>Since (Year Founded)</p>
+                    <div class="image-placeholder icon">🎓</div> <!-- Placeholder for Graduation Cap Icon -->
+                </div>
+                <div class="achievement-item shadow-sm hover:shadow-md transition-all duration-300">
+                    <span class="achievement-number" data-target="100">0</span>%
+                    <p>Client Satisfaction</p>
+                    <div class="image-placeholder icon">🌟</div> <!-- Placeholder for TBA Mini Logo -->
+                </div>
+            </div>
+        </section>
+
+        <!-- For Tutors Section -->
+        <section class="section-padding">
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">For Tutors</h2>
+                <div class="grid-2-col">
+                    <div class="feature-card">
+                        <div class="icon">✨</div> <!-- Placeholder for relevant icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Why Join TBA?</h3>
+                        <ul class="list-disc list-inside text-theme-medium">
+                            <li>Fast matching with new students globally</li>
+                            <li>Verified, safe and supportive system</li>
+                            <li>Flexible work: teach online or in-person, set your schedule</li>
+                            <li>Professional reputation: work under a trusted and established brand</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📝</div> <!-- Placeholder for relevant icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">How To Join:</h3>
+                        <ul class="list-decimal list-inside text-theme-medium">
+                            <li>Send your CNIC, transcripts, and intro via WhatsApp or form</li>
+                            <li>Interview and verification</li>
+                            <li>Start teaching after approval</li>
+                        </ul>
+                        <div class="image-placeholder mt-4">Group of Tutors Join Us Badge</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+<section class="section-padding bg-gray-100 py-12">
+  <div class="max-w-screen-xl mx-auto px-4 lg:px-8">
+    <h2 class="text-center text-3xl font-bold text-theme-dark mb-12">FAQs</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- FAQ Card -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Q&A Icon</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">How does TBA select tutors?</h3>
+        <p class="text-sm text-gray-700">Tutors must verify their CNIC, submit academic transcripts and pass a screening chat interview.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Open Book Icon</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">How quickly can I get a tutor?</h3>
+        <p class="text-sm text-gray-700">Most clients are matched within 24–48 hours after sharing full requirements.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Chat Bubble Icon</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">How are demo classes handled?</h3>
+        <p class="text-sm text-gray-700">The first class is always free; only continue if you are fully satisfied.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Secure Payment Icon</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">How are payments managed?</h3>
+        <p class="text-sm text-gray-700">TBA collects advance payments and pays tutors after classes commence, ensuring safety for all.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Country Flags</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">Are both male and female tutors available?</h3>
+        <p class="text-sm text-gray-700">Yes, we have qualified tutors of both genders.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center h-full">
+        <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-full mb-4">
+          <span class="text-xs text-gray-500">Globe Icon</span>
+        </div>
+        <h3 class="text-lg font-semibold text-sky-600 mb-2">Is TBA available internationally?</h3>
+        <p class="text-sm text-gray-700">Yes, TBA serves clients globally for online tuition.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+        <!-- Contact & WhatsApp Section -->
+        <section class="section-padding">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold text-theme-dark mb-8">Contact & WhatsApp</h2>
+                <div class="contact-card w-full px-4 sm:px-6 lg:px-8">
+                    <div class="contact-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M380.9 97.1C339.4 55.6 283.8 32 224 32S108.6 55.6 67.1 97.1 32 184.2 32 224c0 1.4.1 2.8.2 4.2C36.3 355.6 138.6 454 224 454c1.4 0 2.8-.1 4.2-.2 114.7-4.1 216.9-106.3 221.3-219.7 0-1.4.1-2.8.1-4.2 0-39.8-23.6-95.4-65.1-136.9zM224 416c-104.9 0-190-85.1-190-190S119.1 36 224 36s190 85.1 190 190-85.1 190-190 190zM224 208a16 16 0 100-32 16 16 0 000 32zM320 256a16 16 0 100-32 16 16 0 000 32zM128 256a16 16 0 100-32 16 16 0 000 32zM272 304a16 16 0 100-32 16 16 0 000 32zM176 304a16 16 0 100-32 16 16 0 000 32z"/></svg>
+                        <p class="text-theme-dark font-semibold">WhatsApp: 0331-8290380</p>
+                    </div>
+                    <a href="https://wa.me/923318290380" target="_blank" class="text-cyan-600 hover:underline">WhatsApp Us</a>
+                    <p class="mt-4"><a href="https://www.instagram.com/tuitionsbyammar" target="_blank" class="text-cyan-600 hover:underline">Instagram: tuitionsbyammar</a></p>
+                    <p><a href="https://www.facebook.com/TuitionsByAmmar" target="_blank" class="text-cyan-600 hover:underline">Facebook: Tuitions By Ammar</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Our Story Section -->
+        <section class="section-padding bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">About / Our Story</h2>
+                <div class="grid-2-col items-center">
+                    <div class="text-content text-theme-medium">
+                        <p class="mb-4">Founded by Ammar, a top student and tutor, TBA was born from real experience—helping friends find tutors and quickly growing into a trusted global network. Since 2018, TBA has prioritized verified tutors, secure payments, and transparent support for every client. Today, our network helps students worldwide succeed with confidence.</p>
+                        <div class="image-placeholder mt-4">Founder Ammar Timeline Illustration</div>
+                    </div>
+                    <div class="image-content">
+                        <div class="image-placeholder w-full h-auto" style="min-height: 250px;">Candid Tutoring Session</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal & Trust Section -->
+        <section class="section-padding">
+            <div class="container mx-auto">
+                <h2 class="text-center text-3xl font-bold text-theme-dark mb-8">Legal & Trust</h2>
+                <div class="grid-3-col">
+                    <div class="legal-card text-center">
+                        <div class="icon">🛡️</div> <!-- Placeholder for Shield Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Privacy Policy</h3>
+                        <p class="text-theme-medium">Your information is always kept confidential and never shared.</p>
+                    </div>
+                    <div class="legal-card text-center">
+                        <div class="icon">📜</div> <!-- Placeholder for Contract Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Terms & Conditions</h3>
+                        <p class="text-theme-medium">Clear, fair, and client-friendly.</p>
+                    </div>
+                    <div class="legal-card text-center">
+                        <div class="icon">🤝</div> <!-- Placeholder for Handshake Icon -->
+                        <h3 class="text-xl font-semibold text-theme-primary mb-2">Code of Conduct</h3>
+                        <p class="text-theme-medium">Professional behavior is mandatory for both tutors and clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tuitions by Ammar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

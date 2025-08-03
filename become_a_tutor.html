@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuitions by Ammar - Become a Tutor</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to integrate Tailwind with existing theme */
+        .text-cyan-600 { color: #19A7CE; }
+        .focus\:ring-cyan-400:focus { --tw-ring-color: rgba(25, 167, 206, 0.4); }
+        .bg-cyan-600 { background-color: #19A7CE; }
+        .hover\:bg-cyan-700:hover { background-color: #146C94; }
+        .text-theme-primary { color: #19A7CE; }
+        .text-theme-dark { color: #333; }
+        .text-theme-medium { color: #555; }
+        .text-theme-light { color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tuitions by Ammar</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="become_a_tutor.html">Become a Tutor</a></li>
+                <li><a href="find_a_tutor.html">Find a Tutor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-small">
+            <h1>Become a Tutor</h1>
+            <div class="hero-bg-triangle"></div>
+        </section>
+
+        <section class="p-6">
+            <form class="space-y-8 bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto" action="https://script.google.com/macros/s/AKfycbwhgN-YaCjd3_GkGQkMdKiSlKnehNbykzY_vGoHlB0LZMo_XVBFZbbrK5NnwM7shyAJ3w/exec" method="POST" enctype="multipart/form-data" id="tutorApplicationForm">
+
+                <!-- Personal Information -->
+                <div>
+                  <h3 class="flex items-center mb-6 text-xl font-bold text-slate-900">
+                    <svg class="w-6 h-6 mr-2 text-cyan-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+                    Personal Information
+                  </h3>
+                  <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="fullName">Full Name <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="email">Email <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="phone">Phone Number <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                     <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="nationality">Nationality <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+                    </div>
+                    <div class="md:col-span-2">
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="address">Address <span class="text-red-500">*</span></label>
+                      <textarea class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" rows="3" id="address" name="address" placeholder="Enter your complete address" required></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Educational Background -->
+                <div>
+                  <h3 class="flex items-center mb-6 text-xl font-bold text-slate-900">
+                    <svg class="w-6 h-6 mr-2 text-cyan-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5l6 4.5L12 16.5l-6-4.5 6-4.5zM12 7.5v9M21 12c0 2.485-6 4.5-9 4.5S3 14.485 3 12s6-4.5 9-4.5 9 2.015 9 4.5z"/></svg>
+                    Educational Background
+                  </h3>
+                  <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="qualification">Highest Qualification <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="qualification" name="qualification" placeholder="e.g., Master's Degree, PhD" required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="university">University/Institution <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="university" name="university" placeholder="Enter university or institution name" required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="fieldOfStudy">Field of Study <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Mathematics, Physics, English" required>
+                    </div>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="graduationYear">Graduation Year <span class="text-red-500">*</span></label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="number" id="graduationYear" name="graduationYear" min="1900" max="2099" step="1" placeholder="YYYY" required>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Teaching Experience -->
+                <div>
+                  <h3 class="flex items-center mb-6 text-xl font-bold text-slate-900">
+                    <svg class="w-6 h-6 mr-2 text-cyan-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5h15m-15 0a2.25 2.25 0 00-2.25 2.25V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021 18v-5.25a2.25 2.25 0 00-2.25-2.25m-15 0a2.25 2.25 0 00-2.25 2.25V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021 18v-5.25a2.25 2.25 0 00-2.25-2.25m-15 0H3m6.75 4.5h.008v.008h-.008v-.008zm.008 2.25h.008v.008h-.008v-.008zm.008 2.25h.008v.008h-.008v-.008zm-2.25-4.5h.008v.008h-.008v-.008zm.008 2.25h.008v.008h-.008v-.008zm.008 2.25h.008v.008h-.008v-.008zm-2.25-4.5h.008v.008h-.008v-.008zm.008 2.25h.008v.008h-.008v-.008z"/></svg>
+                    Teaching Experience
+                  </h3>
+                  <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="yearsExperience">Years of Teaching Experience</label>
+                      <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="number" id="yearsExperience" name="yearsExperience" min="0" placeholder="e.g., 5">
+                    </div>
+                    <div class="md:col-span-2">
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="subjectsTaught">Subjects You Can Teach <span class="text-red-500">*</span></label>
+                      <textarea class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" rows="3" id="subjectsTaught" name="subjectsTaught" placeholder="List subjects, e.g., 'Mathematics (IGCSE, A-Level), Physics (O-Level)'" required></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="previousRoles">Previous Teaching Roles/Institutions</label>
+                      <textarea class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" rows="3" id="previousRoles" name="previousRoles" placeholder="Describe your previous teaching experience"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Availability -->
+                <div>
+                  <h3 class="flex items-center mb-6 text-xl font-bold text-slate-900">
+                    <svg class="w-6 h-6 mr-2 text-cyan-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25V12m0 0l3 3m-3-3L9 15m6.75-4.5a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"/></svg>
+                    Availability
+                  </h3>
+                  <div class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label class="block mb-2 text-sm font-medium text-slate-700" for="preferredDays">Preferred Teaching Days</label>
+                        <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="preferredDays" name="preferredDays" placeholder="e.g., Mon, Wed, Fri">
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm font-medium text-slate-700" for="preferredHours">Preferred Teaching Hours</label>
+                        <input class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" type="text" id="preferredHours" name="preferredHours" placeholder="e.g., 4 PM - 8 PM">
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Motivation/Notes -->
+                <div>
+                    <h3 class="flex items-center mb-6 text-xl font-bold text-slate-900">
+                      <svg class="w-6 h-6 mr-2 text-cyan-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.23 6.954L15 17.25H9.75m1.5-6.75h.008v.008h-.008v-.008zm2.75 6.75h.008v.008h-.008v-.008z"/></svg>
+                      Tell Us About Yourself
+                    </h3>
+                    <div>
+                      <label class="block mb-2 text-sm font-medium text-slate-700" for="motivation">Why do you want to become a tutor at Tuitions by Ammar?</label>
+                      <textarea class="w-full px-4 py-3 border rounded-lg border-slate-300 focus:ring-2 focus:ring-cyan-400 focus:border-transparent" rows="4" id="motivation" name="motivation" placeholder="Share your passion for teaching and relevant skills"></textarea>
+                    </div>
+                </div>
+
+                <div id="formMessages" class="py-4 text-center text-sm font-semibold"></div>
+                <!-- Submit Buttons -->
+                <div class="flex flex-col justify-center gap-4 pt-6 sm:flex-row">
+                  <button type="submit" id="submitButton" class="flex items-center justify-center w-full px-8 py-4 font-semibold transition-all duration-300 bg-cyan-600 rounded-full hover:bg-cyan-700 disabled:bg-cyan-300 text-white sm:w-auto">
+                    Submit Application
+                  </button>
+                  <button type="button" class="flex items-center justify-center w-full px-8 py-4 font-semibold transition-all duration-300 border-2 rounded-full border-slate-300 hover:border-slate-400 text-slate-700 sm:w-auto">
+                    Cancel
+                  </button>
+                </div>
+              </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tuitions by Ammar. All rights reserved.</p>
+    </footer>
+    <script>
+        const form = document.getElementById('tutorApplicationForm');
+        const submitButton = document.getElementById('submitButton');
+        const formMessages = document.getElementById('formMessages');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+            formMessages.textContent = 'Sending your application...';
+            formMessages.className = 'py-4 text-center text-sm font-semibold text-blue-600';
+
+            const formData = new FormData(form);
+            const url = form.action;
+
+            try {
+                // For file uploads with Google Apps Script, 'no-cors' mode is typically required.
+                const response = await fetch(url, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors'
+                });
+
+                // Since 'no-cors' prevents reading response, assume success if no network error
+                formMessages.textContent = 'Application submitted successfully! We will review it shortly.';
+                formMessages.className = 'py-4 text-center text-sm font-semibold text-green-600';
+                form.reset(); // Clear the form
+
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                formMessages.textContent = 'There was an error submitting your application. Please try again.';
+                formMessages.className = 'py-4 text-center text-sm font-semibold text-red-600';
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Application';
+            }
+        });
+    </script>
+</body>
+
+
+
