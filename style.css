@@ -4,25 +4,25 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+    overflow-x: hidden; 
 }
 
-/* Ensure main containers take full width */
+
 body > * {
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Example for common container classes, adjust as needed based on your HTML */
+
 .container, .wrapper, .main-content {
     width: 100%;
-    max-width: 100%; /* Ensure it doesn't exceed 100% of its parent */
-    margin: 0 auto; /* Center content if needed, but not strictly for full width */
+    max-width: 100%; 
+    margin: 0 auto; 
     box-sizing: border-box;
 }
 
 
-/* Ensure all elements use Roboto */
+
 * {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -65,7 +65,7 @@ body > * {
 .section-wrapper {
   position: relative;
   width: 100%;
-  height: 100vh; /* Adjusted to match section height */
+  height: 100vh;
   overflow: hidden;
 }
 .section-buttons {
@@ -77,7 +77,7 @@ body > * {
 .section {
   background: url('section0.jpg') center center / cover no-repeat;
   width: 100%;
-  height: 110vh; /* Increased height */
+  height: 110vh;
   position: relative;
   z-index: 1;
 }
@@ -113,13 +113,13 @@ body > * {
   -webkit-text-stroke-width: 2.5px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.99);
   font-family: 'Roboto', sans-serif;
-  font-size: 100px;             /* bigger */
+  font-size: 100px;             
   font-style: normal;
-  font-weight: 900;             /* bolder */
+  font-weight: 900;           
   line-height: 1.1;
   max-width: 100%;
-  margin-top: -80px;            /* higher on the page */
-  white-space: nowrap;          /* one-line */
+  margin-top: -80px;          
+  white-space: nowrap;          
   animation: fadeSlideUp 2s ease-out;
 }
 
@@ -140,7 +140,7 @@ body > * {
   line-height: normal;
   max-width: 100%;
   position: relative; 
-  animation: fadeSlideUp 2s ease-out; /* or absolute if you want to control it exactly like before */
+  animation: fadeSlideUp 2s ease-out;
 }
 
 
@@ -152,7 +152,7 @@ body > * {
   height: 100%;
   object-fit: cover;
   z-index: 2;
-  pointer-events: none; /* allows clicks to pass through */
+  pointer-events: none; 
 }
 
 .container2 {
@@ -198,7 +198,7 @@ nav {
     font-family: 'Roboto', sans-serif !important;
     font-size: 1.7rem;
     font-weight: 700;
-    color: #19A7CE; /* Base blue color */
+    color: #19A7CE;
     background-image: linear-gradient(to right, #146C94, #AFD3E2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -228,10 +228,10 @@ nav ul li a:hover {
     color: white;
 }
 
-/* General Section Styling */
+
 section {
     padding: 60px 20px;
-    width: 100%; /* Changed to full width */
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -256,7 +256,7 @@ h2::after {
     border-radius: 2px;
 }
 
-/* Call to Action Button */
+
 .btn.call-to-action {
     display: inline-block;
     background-color: #19A7CE;
@@ -279,7 +279,6 @@ h2::after {
     font-size: 0.9rem;
 }
 
-/* Hero Sections (General & Small) */
 .hero {
     background: linear-gradient(135deg, #AFD3E2 0%, #FFFFFF 100%);
     padding: 80px 20px;
@@ -337,7 +336,7 @@ h2::after {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
-/* Home Page Specific */
+
 .hero-content {
     display: flex;
     flex-direction: row;
@@ -396,31 +395,29 @@ h2::after {
     line-height: 1.7;
     max-width: 1200px;
     margin: 20px auto;
-/* Ensure main content areas span full width */
+}
 .container.mx-auto, .section-padding .container.mx-auto {
     max-width: 100%;
-    padding: 0 20px; /* Add horizontal padding */
-    box-sizing: border-box; /* Include padding in element's total width */
+    padding: 0 20px; 
+    box-sizing: border-box; 
 }
 
-/* Adjustments for general sections to ensure full width usage */
+
 section {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
 }
 
-/* Ensure widgets and other grid items expand properly */
+
 .widgets-container, .feature-grid, .grid-3-col, .grid-2-col, .testimonials-list, .subject-categories-grid, .teachers-grid, .teachers-grid-detailed, .gallery-grid {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px; /* Add padding to grids as well */
+    padding: 0 20px; 
     box-sizing: border-box;
 }
 
-    color: #666;
-}
 
 .our-teachers {
     background-color: #f9f9f9;
@@ -552,7 +549,7 @@ section {
     margin-bottom: 25px;
 }
 
-/* About Page Specific */
+
 .our-team {
     background-color: white;
     padding-top: 80px;
@@ -710,7 +707,7 @@ section {
     font-size: 0.95rem;
 }
 
-/* Teachers Page Specific (Subject Categories) */
+
 .subject-categories-section {
     background-color: white;
     padding-top: 80px;
@@ -737,13 +734,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 200px; /* Ensure a minimum height for consistent look */
+    min-height: 200px; 
 }
 
 .subject-category-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    background-color: #91C8E4; /* Lighter theme color on hover */
+    background-color: #91C8E4; 
 }
 
 .subject-category-box h3 {
@@ -761,7 +758,7 @@ section {
     line-height: 1.5;
 }
 
-/* Teacher Details Pages Specific (math_teachers.html, etc.) */
+
 .teachers-by-subject {
     background-color: #f9f9f9;
     padding-top: 60px;
@@ -819,7 +816,7 @@ section {
     color: #4682A9;
 }
 
-/* Image Gallery Section */
+
 .image-gallery {
     background-color: white;
     padding-top: 80px;
@@ -847,7 +844,7 @@ section {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Contact Page Specific */
+
 .contact-form-section {
     background-color: white;
     padding-top: 80px;
@@ -979,7 +976,7 @@ section {
     display: block;
 }
 
-/* Footer */
+
 footer {
     background-color: #333;
     color: white;
@@ -993,7 +990,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;

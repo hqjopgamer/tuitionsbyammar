@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5 // Trigger when 50% of the element is visible
+        threshold: 0.5 
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const element = entry.target;
                 const target = parseInt(element.getAttribute('data-target'));
                 let current = 0;
-                const duration = 2000; // 2 seconds
-                const step = target / (duration / 10); // Calculate step based on 10ms interval
+                const duration = 2000; 
+                const step = target / (duration / 10); 
 
                 const timer = setInterval(() => {
                     current += step;
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     } else {
                         element.textContent = target;
                         clearInterval(timer);
-                        observer.unobserve(element); // Stop observing once counted
+                        observer.unobserve(element);
                     }
                 }, 10);
             }
         });
     }, observerOptions);
 
-    // Observe all elements with the 'achievement-number' class
+    
     document.querySelectorAll('.achievement-number').forEach(number => {
         observer.observe(number);
     });
